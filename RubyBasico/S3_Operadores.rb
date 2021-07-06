@@ -40,7 +40,7 @@ puts a
 class ClaseOperadores
 
   def **(x)
-    puts "Elevando a la potencia de#{x}"
+    puts "Elevando a la potencia de #{x}"
   end
 
   def <<(y)
@@ -73,3 +73,12 @@ Integer === 42
 (1..5).include?(3)
 /ell/ =~ 'Hello'
 
+#operadores de asignación
+x = 3
+y = 4 + 5
+puts "x is #{x}, y is #{y}"
+
+#Asignación paralela
+x, y = 3, 9
+x, y = y, x
+puts "x is #{x}, y is #{y}"
